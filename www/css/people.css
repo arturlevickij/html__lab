@@ -31,11 +31,16 @@
 
 .people1 {
     border-radius: 10px;
-    border: 2px solid #F53838;
+    border: 2px solid #DDD;
     background: #FFF;
     width: 350.462px;
     height: 230px;
     flex-shrink: 0;
+    transition: transform 0.7s;
+}
+.people1:hover{
+    border: 2px solid #F53838;
+    transform: translateY(-7px);
 }
 
 .people__part1 {
@@ -123,4 +128,24 @@
     width: 350.462px;
     height: 230px;
     flex-shrink: 0;
+    transition: transform 0.7s;
+}
+.people2:hover{
+    border: 2px solid #F53838;
+    transform: translateY(-7px);
+}
+
+@media screen and (max-width: 768px) {
+    .container-people{
+        margin-right: -40%;
+    }
+    .peoples {
+        padding-top: 60px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .people2 {
+        margin-top: 5%;
+    }
 }

@@ -3,9 +3,21 @@ body {
     color:#0B132A;
 }
 
+@media screen and (max-width: 768px) {
+    body{
+        text-align: center;
+    }
+}
+
 .container{
     margin: 0 auto;
     max-width: 1110px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        padding: 0 auto;
+    }
 }
 
 a{
@@ -24,6 +36,7 @@ li{
     background: #F53838;
     color: #FFF;
     border: none;
+    transition: background-color 0.3s;
 }
 
 .default-shadow{
@@ -34,4 +47,18 @@ li{
     background: rgba(245, 56, 56, 0.35);
     filter: blur(15px);
 }
+
+.default-button:hover{
+    background: rgba(245, 56, 56, 0.35);
+    border: 2px solid #F53838;
+    color: #FFF;
+}
+
+.default-shadow{
+    position: relative;
+    bottom: 10px;
+    transition: 2s;
+}
+
+
 
