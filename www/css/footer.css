@@ -7,8 +7,6 @@
     align-items: center;
     justify-content: space-between;
     background: #F6F5F5;
-    width: 1110px;
-    margin:0  auto;
     padding-top: 180px;
 }
 
@@ -38,4 +36,17 @@
     font-weight: 500;
     line-height: normal;
     margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .foot{
+        background: #F6F5F5;
+    }
+    .footer {
+        width: 140%;
+        flex-direction: column;
+    }
+    .nametag{
+        margin-bottom: 25px;
+    }
 }

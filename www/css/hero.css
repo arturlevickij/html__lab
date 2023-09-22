@@ -24,4 +24,24 @@
 
 .hero__button{
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container-title{
+        background: #FFF;
+        display: flex;
+    }
+    .hero__iner{
+        width:520px;
+        margin-left: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero__button{
+        align-items: center;
+    }
+    
 }
